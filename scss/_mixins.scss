@@ -1,9 +1,19 @@
-// Colors
+// Descriptive
+// http://designmodo.github.io/Flat-UI/
 $white: #fff;
 $black: #000;
-$green: #16a085;
-$dk-red: #C0392B;
-$red: #E74C3C;
+$gray: #eaeaea;
+$green-sea: #16a085;
+$pomegranate: #C0392B;
+$alizarin: #E74C3C;
+$wet-asphalt: #34495E;
+$midnight-blue: #2C3E50;
+
+// Functional
+$primary: $wet-asphalt;
+$secondary: $midnight-blue;
 
 // Typography
 $poppins: 'Poppins', sans-serif;
+
+// sass --watch scss/style.scss:css/style.css --style expanded

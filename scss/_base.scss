@@ -10,25 +10,21 @@ html {
 
 body {
 	position: relative;
-	background-image: url(../images/bg.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	background-attachment: fixed;
+	background-color: $primary;
 	font-family: $poppins;
 	font-size: 100%;
 	font-weight: 300;
-	color: $white;
+	color: $secondary;
 	line-height: 1.5;
 	margin: 0;
-	padding: 10% 25px 0;
+	padding: 5% 25px 0;
 }
 
 .wrap {
-	background-color: rgba($black, 0.65);
+	background-color: $gray;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 25px 50px;
+	padding: 0;
 }
 
 .screen-reader-text {
@@ -46,9 +42,10 @@ body {
 a {
 	color: $white;
 	text-decoration: none;
-	border-bottom: 1px dotted $white;
+	//border-bottom: 1px dotted $white;
 	transition: all 0.3s ease;
 	&:hover, &:active, &:focus {
+		//
 	}
 }
 
@@ -65,10 +62,15 @@ a {
 	}
 }
 
+.content {
+	padding: 50px;
+}
+
 h1 {
 	font-size: 3.25vw;
 	font-weight: 300;
 	text-align: center;
+	margin: 0 0 0.67em;
 }
 
 h2 {
@@ -82,4 +84,6 @@ p {
 
 footer {
 	text-align: center;
+	margin: 1em 0 0;
+	color: $gray;
 }
