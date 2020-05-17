@@ -1,12 +1,12 @@
 var main = function() {
-  $('.icon-menu').click(function() {
+  $('.menu-open').click(function() {
     $('.nav-primary').animate({
-      right: "0"
+      left: "0"
     }, 500);
   });
-  $('.icon-close').click(function() {
+  $('.menu-close').click(function() {
     $('.nav-primary').animate({
-      right: "-1024px"
+      left: "-320px"
     }, 500);
   });
 };

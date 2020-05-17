@@ -20,9 +20,14 @@
 
 		&::before { /* https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type | Accessibility concerns */
 			content: "\200B";
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
 		}
 
-		&:hover > a {
+		&:hover > a,
+		&:active > a,
+		&:focus > a {
 			background-color: $primary;
 			color: $white;
 		}
@@ -36,7 +41,9 @@
 		line-height: 1;
 		padding: 20px;
 
-		&:hover, &:active, &:focus {
+		&:hover,
+		&:active,
+		&:focus {
 			color: $white;
 			background-color: $primary;
 		}
@@ -62,7 +69,9 @@
 
 	ul li,
 	ul ul li {
-		&:hover > ul, &:active > ul, &:focus > ul {
+		&:hover > ul,
+		&:active > ul,
+		&:focus > ul {
 			visibility: visible;
 		}
 	}
@@ -74,10 +83,6 @@
 	.sub-menu li {
 		display: block;
 		margin: 0;
-
-		&:hover > a {
-			//
-		}
 	}
 
 	.sub-menu a {
@@ -88,89 +93,108 @@
 		padding: 20px;
 		background-color: $primary;
 
-		&:hover, &:active, &:focus {
+		&:hover,
+		&:active,
+		&:focus {
 			color: $primary;
 			background-color: $white;
 		}
 	}
 }
 
-
-.icon-menu,
-.icon-close {
+.menu-open {
 	display: none;
 	cursor: pointer;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	font-size: 65px;
+	line-height: 0.5;
+	color: $white;
 }
 
+.menu-close {
+	display: none;
+	cursor: pointer;
+	height: 50px;
+	margin: 5px 0 0;
+	padding: 0 0 0 15px;
+	font-size: 65px;
+	line-height: 60px;
+	text-align: right;
+	color: $white;
+}
 
-/*  */
+/* Mobile Styles */
 @media (max-width: 1024px) {
-	.icon-close {
+	.menu-open {
 		display: block;
-		margin: 5px 0 0;
-		padding: 0 0 0 15px;
-		font-size: 65px;
-		line-height: 60px;
-		height: 50px;
 	}
 
-	.icon-menu {
-		position: absolute;
-		top: 10px;
-		right: 10px;
+	.menu-close {
 		display: block;
-		//border-bottom: none;
-		font-size: 65px;
-		line-height: 0.5;
-
-		&:hover, &:active, &:focus {
-			//border-bottom: none;
-		}
 	}
 
 	.nav-primary {
 		position: fixed;
 		top: 0;
-		right: -1024px;
+		left: -320px;
 		background-color: $secondary;
-		width: 1024px;
+		width: 320px;
 		max-width: 100%;
-		height: 100%;
+		height: 100vh;
+		overflow-y: auto;
 		padding: 0;
-
-		& > ul {
-			height: 75vh;
-			overflow-y: auto;
-		}
 
 		ul ul,
 		ul ul ul {
-			display: block;
 			position: static;
+			max-height: 0;
+			overflow: hidden;
+			visibility: hidden;
+			opacity: 0;
+			box-shadow: none;
+			transition: all 0.5s ease;
+		}
+
+		ul li,
+		ul ul li {
+			&:hover > ul,
+			&:active > ul,
+			&:focus > ul {
+				max-height: 2000px;
+				visibility: visible;
+				opacity: 1;
+			}
 		}
 
 		li {
 			display: block;
 			margin: 0;
+
+			&:hover > a,
+			&:active > a,
+			&:focus > a {
+				background-color: transparent;
+				color: $white;
+			}
 		}
 
-		a,
+		li a,
 		.sub-menu a {
 			display: block;
 			width: 100%;
 			background-color: transparent;
 			text-align: left;
-			padding: 5px 25px;
-			//border-bottom: none;
+			padding: 15px;
+			color: $white;
 
-			&:hover, &:active, &:focus {
-				//border-bottom: none;
+			&:hover,
+			&:active,
+			&:focus {
 				background-color: $primary;
+				color: $white;
 			}
-		}
-
-		& li:hover > a {
-			//border-bottom: none;
 		}
 	}	
 }
