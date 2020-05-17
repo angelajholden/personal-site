@@ -1,21 +1,33 @@
 /* Navigation */
 .nav-primary {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
 	background-color: $white;
+
 	ul {
 		margin: 0;
 		padding: 0;
 		text-align: center;
 	}
+
 	li {
 		position: relative;
 		list-style-type: none;
 		display: inline-block;
 		margin: 0 1vw;
+
+		&::before { /* https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type | Accessibility concerns */
+			content: "\200B";
+		}
+
 		&:hover > a {
 			background-color: $primary;
 			color: $white;
 		}
 	}
+
 	a {
 		display: block;
 		text-decoration: none;
@@ -23,43 +35,51 @@
 		background-color: $white;
 		line-height: 1;
 		padding: 20px;
+
 		&:hover, &:active, &:focus {
 			color: $white;
 			background-color: $primary;
 		}
 	}
+
 	ul ul {
-		display: none;
+		visibility: hidden;
 		position: absolute;
 		top: 100%;
 		left: 0;
 		z-index: 3;
 		box-shadow: 1px 1px 1px rgba($black,0.25);
 	}
+
 	ul ul ul {
-		display: none;
+		visibility: hidden;
 		position: absolute;
 		top: 0;
 		left: 100%;
 		z-index: 3;
 		box-shadow: 1px 1px 1px rgba($black,0.25);
 	}
+
 	ul li,
 	ul ul li {
 		&:hover > ul, &:active > ul, &:focus > ul {
-			display: block;
+			visibility: visible;
 		}
 	}
+
 	.sub-menu {
 		text-align: left;
 	}
+
 	.sub-menu li {
 		display: block;
 		margin: 0;
+
 		&:hover > a {
 			//
 		}
 	}
+
 	.sub-menu a {
 		display: block;
 		color: $white;
@@ -67,6 +87,7 @@
 		border-bottom: none;
 		padding: 20px;
 		background-color: $primary;
+
 		&:hover, &:active, &:focus {
 			color: $primary;
 			background-color: $white;
@@ -74,11 +95,13 @@
 	}
 }
 
+
 .icon-menu,
 .icon-close {
 	display: none;
 	cursor: pointer;
 }
+
 
 /*  */
 @media (max-width: 1024px) {
@@ -90,6 +113,7 @@
 		line-height: 60px;
 		height: 50px;
 	}
+
 	.icon-menu {
 		position: absolute;
 		top: 10px;
@@ -98,10 +122,12 @@
 		//border-bottom: none;
 		font-size: 65px;
 		line-height: 0.5;
+
 		&:hover, &:active, &:focus {
 			//border-bottom: none;
 		}
 	}
+
 	.nav-primary {
 		position: fixed;
 		top: 0;
@@ -111,19 +137,23 @@
 		max-width: 100%;
 		height: 100%;
 		padding: 0;
+
 		& > ul {
 			height: 75vh;
 			overflow-y: auto;
 		}
+
 		ul ul,
 		ul ul ul {
 			display: block;
 			position: static;
 		}
+
 		li {
 			display: block;
 			margin: 0;
 		}
+
 		a,
 		.sub-menu a {
 			display: block;
@@ -132,13 +162,15 @@
 			text-align: left;
 			padding: 5px 25px;
 			//border-bottom: none;
+
 			&:hover, &:active, &:focus {
 				//border-bottom: none;
 				background-color: $primary;
 			}
 		}
+
 		& li:hover > a {
 			//border-bottom: none;
 		}
-	}
+	}	
 }
