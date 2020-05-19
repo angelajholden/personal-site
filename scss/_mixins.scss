@@ -8,13 +8,53 @@ $pomegranate: #C0392B;
 $alizarin: #E74C3C;
 $wet-asphalt: #34495E;
 $midnight-blue: #2C3E50;
+$yellow: #F2D77E;
 
 // Functional
 $primary: $wet-asphalt;
 $secondary: $midnight-blue;
-$tertiary: $green-sea;
+$tertiary: $yellow;
 
 // Typography
 $poppins: 'Poppins', sans-serif;
 
-// sass --watch scss/style.scss:css/style.css --style expanded
+// Buttons
+@mixin yellow-button {
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $primary;
+    padding: 15px 35px;
+    background-color: $yellow;
+    border-radius: 50vh;
+    border: 3px solid $yellow;
+    transition: all 0.3s ease;
+
+    &:hover,
+    &:active {
+        background-color: $white;
+        color: $primary;
+    }
+}
+
+@mixin blue-button {
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $white;
+    padding: 15px 35px;
+    background-color: $primary;
+    border-radius: 50vh;
+    border: 3px solid $primary;
+    transition: all 0.3s ease;
+
+    &:hover,
+    &:active {
+        background-color: $white;
+        color: $primary;
+    }
+}
+
+// sass --watch scss/style.scss:style.css --style compressed

@@ -5,6 +5,7 @@
 	left: 0;
 	width: 100%;
 	background-color: $white;
+    z-index: 3;
 
 	ul {
 		margin: 0;
@@ -91,7 +92,7 @@
 		white-space: nowrap;
 		border-bottom: none;
 		padding: 20px;
-		background-color: $primary;
+		background-color: $secondary;
 
 		&:hover,
 		&:active,
