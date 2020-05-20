@@ -10,7 +10,7 @@ html {
 
 body {
 	position: relative;
-	background-color: $primary;
+	background-color: $secondary;
 	font-family: $poppins;
 	font-size: 100%;
 	font-weight: 300;
@@ -44,10 +44,9 @@ body {
 a {
 	color: $white;
 	text-decoration: none;
-	//border-bottom: 1px dotted $white;
 	transition: all 0.3s ease;
 	&:hover, &:active, &:focus {
-		//
+		color: $yellow;
 	}
 }
 
@@ -55,24 +54,6 @@ button {
     -webkit-appearance: none;
     background: none;
     border: none;
-}
-
-.link {
-	position: absolute;
-	top: 10px;
-	left: 10px;
-	text-transform: uppercase;
-	font-size: 0.9em;
-
-	&:before {
-		content: "←";
-		color: $white;
-		margin-right: 5px;
-	}
-}
-
-.content {
-	//padding: 50px;
 }
 
 h1 {
@@ -93,103 +74,6 @@ h2 {
 
 p {
 	margin: 1rem 0;
-}
-
-.header {
-    position: relative;
-    padding: 20px 20px 65px;
-    background-color: $primary;
-    color: $white;
-    text-align: center;
-    z-index: 0;
-
-    .svg_circle {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        width: 100%;
-        height: 100%;
-        transform: translateX(-50%);
-        z-index: -1;
-    }
-
-    p {
-        max-width: 400px;
-        margin: -2rem auto 2.5rem;
-        font-size: 1.5rem;
-        font-weight: 300;
-    }
-
-    a {
-        color: $white;
-
-        &:hover,
-        &:active {
-            color: $yellow;
-        }
-    }
-
-    .button {
-        @include yellow-button;
-    }
-}
-
-.top_home_links {
-    .home_links {
-        display: inline-block;
-        width: 49.5%;
-    }
-
-    .home_links:nth-of-type(1) {
-        text-align: left;
-    }
-
-    .home_links:nth-of-type(2) {
-        text-align: right;
-    }
-}
-
-.content {
-    background-color: $gray;
-    padding: 20px 0 0;
-    display: flex;
-
-    .yellow_box,
-    .img_box {
-        width: calc(50% - 10px);
-    }
-
-    .yellow_box {
-        background-color: $yellow;
-        color: $primary;
-        margin: 0 10px 0 0;
-        padding: 65px 100px;
-
-        .sub_head {
-            margin: 0;
-        }
-
-        p {
-            font-size: 1.25rem;
-            font-weight: 300;
-        }
-
-        .button {
-            @include blue-button;
-            display: block;
-            margin: 1.5rem 0 0;
-        }
-    }
-
-    .img_box {
-        margin: 0 0 0 10px;
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    }
 }
 
 footer {

@@ -26,10 +26,11 @@
 			left: -9999px;
 		}
 
+		&.current a,
 		&:hover > a,
 		&:active > a,
 		&:focus > a {
-			background-color: $primary;
+			background-color: $secondary;
 			color: $white;
 		}
 	}
@@ -46,7 +47,7 @@
 		&:active,
 		&:focus {
 			color: $white;
-			background-color: $primary;
+			background-color: $secondary;
 		}
 	}
 
