@@ -1,7 +1,6 @@
-<span class="screen-reader-text"><a href="#skip-nav">Skip Navigation</a></span>
-<div aria-label="hidden" class="menu-open"><span class="menu-icon">≡</span></div>
+<a href="#skip-nav">Skip Navigation</a>
+<a href="#" aria-label="Open Menu" class="menu-open"><span class="menu-icon">≡</span></a>
 <nav class="nav-primary">
-	<div aria-label="hidden" class="menu-close"><span class="menu-icon">×</span></div>
 	<ul>
 		<li class="home current"><a href="/">Home</a></li>
 		<li class="about has-children"><a href="#">About</a>
@@ -19,4 +18,5 @@
 		<li class="portfolio"><a href="#">Portfolio</a></li>
 		<li><a href="mailto:info@angelajholden.com">Contact</a></li>
 	</ul>
+	<a href="#" aria-label="Close Menu" class="menu-close"><span class="menu-icon">×</span></a>
 </nav>

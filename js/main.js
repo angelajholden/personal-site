@@ -4,12 +4,12 @@ var main = function() {
 			$('.nav-primary').css('left','');
 		}
 	});
-	$('.menu-open').on('click', function() {
+	$('.menu-open').on('focus', function() {
 		$('.nav-primary').animate({
 			left: "0"
 		}, 500);
 	});
-	$('.menu-close').on('click', function() {
+	$('.menu-close').on('focus', function() {
 		$('.nav-primary').animate({
 			left: "-320px"
 		}, 500);
