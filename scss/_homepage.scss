@@ -32,10 +32,6 @@
 		}
 	}
 
-	button {
-		margin: 0 auto;
-	}
-
 	.button {
 		@include yellow-button;
 	}
@@ -88,7 +84,6 @@
 
 		.button {
 			@include blue-button;
-			display: block;
 			margin: 1rem 0 0;
 		}
 	}

@@ -30,7 +30,7 @@
 
 				<p>Making the world a better place, one user experience at a time.</p>
 
-				<button><a class="button" href="#">Interested? Let's talk.</a></button>
+				<a class="button" href="#">Interested? Let's talk.</a>
 
 				<?php include_once('svg/circle.svg'); ?>
 			</header>
@@ -39,7 +39,7 @@
 				<article class="yellow_box">
 					<h2 class="sub_head">Hello there</h2>
 					<p>My name is Angela and I’m a UI/UX designer and frontend developer. I love my dog, the piano and coding. In that order. Rounding out my list are cheap wine, coffee and books.</p>
-					<button><a class="button" href="#">More About Me</a></button>
+					<a class="button" href="#">More About Me</a>
 				</article>
 
 				<figure class="img_right">

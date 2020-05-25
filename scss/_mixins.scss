@@ -22,7 +22,7 @@ $northwell: 'Northwell', script;
 
 // Buttons
 @mixin yellow-button {
-		display: block;
+		display: inline-block;
 		font-size: 0.95rem;
 		font-weight: 600;
 		text-transform: uppercase;
@@ -42,7 +42,7 @@ $northwell: 'Northwell', script;
 }
 
 @mixin blue-button {
-		display: block;
+		display: inline-block;
 		font-size: 0.95rem;
 		font-weight: 600;
 		text-transform: uppercase;
