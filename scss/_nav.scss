@@ -5,7 +5,7 @@
 	left: 0;
 	width: 100%;
 	background-color: $white;
-    z-index: 3;
+	z-index: 3;
 
 	ul {
 		margin: 0;
@@ -29,9 +29,9 @@
 		&.current a,
 		&:hover > a,
 		&:active > a,
-		&:focus > a {
-			background-color: $secondary;
+		&:focus-within > a {
 			color: $white;
+			background-color: $secondary;
 		}
 	}
 
@@ -58,6 +58,10 @@
 		left: 0;
 		z-index: 3;
 		box-shadow: 1px 1px 1px rgba($black,0.25);
+
+		&:focus-within {
+			visibility: visible;
+		}
 	}
 
 	ul ul ul {
@@ -67,13 +71,23 @@
 		left: 100%;
 		z-index: 3;
 		box-shadow: 1px 1px 1px rgba($black,0.25);
+
+		&:focus-within {
+			visibility: visible;
+		}
 	}
 
 	ul li,
 	ul ul li {
 		&:hover > ul,
-		&:active > ul,
-		&:focus > ul {
+		&:active > ul {
+			visibility: visible;
+		}
+	}
+
+	ul li a,
+	ul ul li a {
+		&:focus + ul {
 			visibility: visible;
 		}
 	}
