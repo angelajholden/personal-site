@@ -4,19 +4,19 @@
 	<div aria-label="hidden" class="menu-close"><span class="menu-icon">×</span></div>
 	<ul>
 		<li class="home current"><a href="/">Home</a></li>
-		<li class="about has-children"><a href="/about/">About</a>
+		<li class="about has-children"><a href="#">About</a>
 			<ul class="sub-menu">
 				<li class="resume"><a href="#">Résumé</a></li>
 			</ul>
 		</li>
 		<li class="skills has-children"><a href="#">Skills</a>
 			<ul class="sub-menu">
-				<li class="uiux"><a href="/skills/ui-ux/">UI/UX</a></li>
-				<li class="frontend"><a href="/skills/frontend/">Frontend</a></li>
-				<li class="a11y"><a href="/skills/accessibility/">Accessibility</a></li>
+				<li class="uiux"><a href="#">UI/UX</a></li>
+				<li class="frontend"><a href="#">Frontend</a></li>
+				<li class="a11y"><a href="#">Accessibility</a></li>
 			</ul>
 		</li>
-		<li class="portfolio"><a href="/portfolio/">Portfolio</a></li>
+		<li class="portfolio"><a href="#">Portfolio</a></li>
 		<li><a href="mailto:info@angelajholden.com">Contact</a></li>
 	</ul>
 </nav>

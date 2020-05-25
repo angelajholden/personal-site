@@ -1,100 +1,168 @@
 .header {
-		position: relative;
-		padding: 20px 20px 65px;
-		background-color: $primary;
+	position: relative;
+	padding: 20px 20px 65px;
+	background-color: $primary;
+	color: $white;
+	text-align: center;
+	z-index: 0;
+
+	.svg_circle {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 100%;
+		height: 100%;
+		transform: translateX(-50%);
+		z-index: -1;
+	}
+
+	p {
+		max-width: 400px;
+		margin: -2rem auto 2.5rem;
+		font-size: 1.5rem;
+		font-weight: 300;
+	}
+
+	a {
 		color: $white;
-		text-align: center;
-		z-index: 0;
 
-		.svg_circle {
-				position: absolute;
-				top: 0;
-				left: 50%;
-				width: 100%;
-				height: 100%;
-				transform: translateX(-50%);
-				z-index: -1;
+		&:hover,
+		&:active {
+			color: $yellow;
 		}
+	}
 
-		p {
-				max-width: 400px;
-				margin: -2rem auto 2.5rem;
-				font-size: 1.5rem;
-				font-weight: 300;
-		}
+	button {
+		margin: 0 auto;
+	}
 
-		a {
-				color: $white;
-
-				&:hover,
-				&:active {
-						color: $yellow;
-				}
-		}
-
-		.button {
-				@include yellow-button;
-		}
+	.button {
+		@include yellow-button;
+	}
 }
 
 .top_home_links {
-		.home_links {
-				display: inline-block;
-				width: 49.5%;
-		}
+	.home_links {
+		display: inline-block;
+		width: 49.5%;
+	}
 
-		.home_links:nth-of-type(1) {
-				text-align: left;
-		}
+	.home_links:nth-of-type(1) {
+		text-align: left;
+	}
 
-		.home_links:nth-of-type(2) {
-				text-align: right;
-		}
+	.home_links:nth-of-type(2) {
+		text-align: right;
+	}
 }
 
 .content {
-		background-color: $gray;
-		padding: 20px 0 0;
-		display: flex;
+	background-color: $gray;
+	padding: 20px 0 0;
+	display: flex;
 
-		.yellow_box,
-		.img_box {
-				width: calc(50% - 10px);
+	.sub_head {
+		font-family: $northwell;
+		font-size: 5rem;
+		line-height: 1;
+		margin: 0;
 		}
 
-		.yellow_box {
-				background-color: $yellow;
-				color: $primary;
-				margin: 0 10px 0 0;
-				padding: 80px 100px 65px;
+	p {
+		font-size: 1.1rem;
+		font-weight: 300;
+	}
 
-				.sub_head {
-					font-family: $northwell;
-					font-size: 4rem;
-					line-height: 1;
-					margin: 0;
-				}
+	.yellow_box,
+	.img_right,
+	.svg_box,
+	.img_left {
+		width: calc(50% - 10px);
+	}
 
-				p {
-						font-size: 1.1rem;
-						font-weight: 300;
-				}
+	.yellow_box {
+		background-color: $yellow;
+		color: $primary;
+		margin: 0 10px 0 0;
+		padding: 80px 80px 50px;
 
-				.button {
-						@include blue-button;
-						display: block;
-						margin: 1rem 0 0;
-				}
+		.button {
+			@include blue-button;
+			display: block;
+			margin: 1rem 0 0;
+		}
+	}
+
+	.img_right {
+		margin: 0 0 0 10px;
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: 80% 50%;
+	}
+
+	.blue_box {
+		position: relative;
+		width: calc(33.333% - 13.333px);
+		background-color: $primary;
+		color: $yellow;
+		margin: 0 20px 0 0;
+		padding: 40px 50px 70px;
+
+		&:nth-of-type(3) {
+			margin-right: 0;
 		}
 
-		.img_box {
-				margin: 0 0 0 10px;
+		.sub_head {
+			font-size: 4rem;
+			text-transform: lowercase;
+			text-align: center;
+			margin-bottom: 1.75rem;
 
-				img {
-						width: 100%;
-						height: 100%;
-						object-fit: cover;
-						object-position: 80% 50%;
-				}
+			.ally {
+				letter-spacing: -6px;
+			}
 		}
+
+		.skill_cta {
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			font-size: 0.95rem;
+			font-weight: 600;
+			text-align: center;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			color: $primary;
+			padding: 16.5px;
+			background-color: $yellow;
+			border: 3px solid $yellow;
+
+			&:hover,
+			&:active {
+				background-color: $white;
+			}
+		}
+	}
+
+	.svg_box {
+		background-color: $primary;
+		color: $yellow;
+		margin: 0 0 0 10px;
+		padding: 80px 100px 50px;
+
+		.sub_head {
+			margin-bottom: 1rem;
+			text-align: center;
+		}
+	}
+
+	.img_left {
+		margin: 0 10px 0 0;
+	}
 }
