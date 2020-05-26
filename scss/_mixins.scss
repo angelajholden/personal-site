@@ -22,41 +22,43 @@ $northwell: 'Northwell', script;
 
 // Buttons
 @mixin yellow-button {
-    font-size: 0.95rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: $primary;
-    padding: 15px 35px;
-    background-color: $yellow;
-    border-radius: 50vh;
-    border: 3px solid $yellow;
-    transition: all 0.3s ease;
+		display: inline-block;
+		font-size: 0.95rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		color: $primary;
+		padding: 15px 35px;
+		background-color: $yellow;
+		border-radius: 50vh;
+		border: 3px solid $yellow;
+		transition: all 0.3s ease;
 
-    &:hover,
-    &:active {
-        background-color: $white;
-        color: $primary;
-    }
+		&:hover,
+		&:active {
+				background-color: $white;
+				color: $primary;
+		}
 }
 
 @mixin blue-button {
-    font-size: 0.95rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: $white;
-    padding: 15px 35px;
-    background-color: $primary;
-    border-radius: 50vh;
-    border: 3px solid $primary;
-    transition: all 0.3s ease;
+		display: inline-block;
+		font-size: 0.95rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		color: $white;
+		padding: 15px 35px;
+		background-color: $primary;
+		border-radius: 50vh;
+		border: 3px solid $primary;
+		transition: all 0.3s ease;
 
-    &:hover,
-    &:active {
-        background-color: $white;
-        color: $primary;
-    }
+		&:hover,
+		&:active {
+				background-color: $white;
+				color: $primary;
+		}
 }
 
 // sass --watch scss/style.scss:style.css --style compressed

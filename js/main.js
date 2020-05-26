@@ -1,6 +1,6 @@
 var main = function() {
 	$(window).on('resize', function() {
-		if ( $(window).width() > 1024 ) {
+		if ( $(window).width() > 960 ) {
 			$('.nav-primary').css('left','');
 		}
 	});
