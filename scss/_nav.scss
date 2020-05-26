@@ -155,6 +155,8 @@ a.menu-close {
 	top: 10px;
 	right: 0;
 	color: $white;
+	padding: 0;
+	background: none;
 
 	.menu-icon {
 		width: 47px;
@@ -163,7 +165,7 @@ a.menu-close {
 }
 
 /* Mobile Styles */
-@media (max-width: 1024px) {
+@media (max-width: 960px) {
 	a.menu-open {
 		display: block;
 	}

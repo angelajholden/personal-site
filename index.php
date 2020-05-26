@@ -51,17 +51,17 @@
 				<aside class="blue_box">
 					<h2 class="sub_head">Engineer</h2>
 					<p>Writing frontend code is what I love most. I discovered web design when I began learning HTML and CSS. I’ve spent thousands of hours building layouts and improving designs for responsiveness and accessibility.</p>
-					<a class="skill_cta" href="#">More about frontend</a>
+					<a class="skill_cta" href="#">More frontend</a>
 				</aside>
 				<aside class="blue_box">
 					<h2 class="sub_head">Design</h2>
 					<p>Learning to design has not been easy for me. It’s disheartening to love beautiful things, and then struggle to create them. I’ve worked harder to be a good designer than anything else I’ve done.</p>
-					<a class="skill_cta" href="#">More about UI/UX</a>
+					<a class="skill_cta" href="#">More UI/UX</a>
 				</aside>
 				<aside class="blue_box">
 					<h2 class="sub_head"><span class="ally">A</span>11y</h2>
 					<p>Ensuring that web sites, apps, and software are accessible is a priority. As I learn more about these principles, I design with accessibility in mind, then engineer those designs to meet accessibility best practices.</p>
-					<a class="skill_cta" href="#">More about accessibility</a>
+					<a class="skill_cta" href="#">More accessibility</a>
 				</aside>
 			</section>
 
