@@ -1,6 +1,8 @@
+<!-- MAMP FREE -->
 <!-- <base href="http://localhost/personal-site/"> -->
 
+<!-- MAMP PRO -->
 <!-- <base href="http://angelajholden/"> -->
 
-<!-- make sure this is the base deployed to Heroku -->
-<!-- <base href="http://angelajholden.herokuapp.com/"> -->
+<!-- Heroku -->
+<base href="http://angelajholden.herokuapp.com/">
