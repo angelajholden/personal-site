@@ -17,7 +17,28 @@
 
 	<body class="home">
 
-		<?php include_once('partials/nav.php'); ?>
+		<a href="#skip-nav">Skip Navigation</a>
+        <a href="#" aria-label="Open Menu" class="menu-open"><span class="menu-icon">≡</span></a>
+        <nav class="nav-primary">
+            <ul>
+                <li class="current"><a href="./">Home</a></li>
+                <li class="has-children"><a href="about/">About</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Résumé</a></li>
+                    </ul>
+                </li>
+                <li class="has-children"><a href="skills/">Skills</a>
+                    <ul class="sub-menu">
+                        <li><a href="skills/ui-ux/">UI/UX</a></li>
+                        <li><a href="skills/frontend/">Frontend</a></li>
+                        <li><a href="skills/accessibility/">Accessibility</a></li>
+                    </ul>
+                </li>
+                <li><a href="portfolio/">Portfolio</a></li>
+                <li><a href="contact/">Contact</a></li>
+            </ul>
+            <a href="#" aria-label="Close Menu" class="menu-close"><span class="menu-icon">×</span></a>
+        </nav>
 
 		<main id="skip-nav" class="wrap">
 
@@ -31,7 +52,7 @@
 
 				<p>Making the world a better place, one user experience at a time.</p>
 
-				<a class="button" href="#">Interested? Let's talk.</a>
+				<a class="button" href="mailto:info@angelajholden.com">Interested? Let's talk.</a>
 
 				<?php include_once('svg/circle.svg'); ?>
 			</header>
@@ -52,17 +73,17 @@
 				<aside class="blue_box">
 					<h2 class="sub_head">Engineer</h2>
 					<p>Writing frontend code is what I love most. I discovered web design when I began learning HTML and CSS. I’ve spent thousands of hours building layouts and improving designs for responsiveness and accessibility.</p>
-					<a class="skill_cta" href="#">More frontend</a>
+					<a class="skill_cta" href="skills/frontend/">More frontend</a>
 				</aside>
 				<aside class="blue_box">
 					<h2 class="sub_head">Design</h2>
 					<p>Learning to design has not been easy for me. It’s disheartening to love beautiful things, and then struggle to create them. I’ve worked harder to be a good designer than anything else I’ve done.</p>
-					<a class="skill_cta" href="#">More UI/UX</a>
+					<a class="skill_cta" href="skills/ui-ux/">More UI/UX</a>
 				</aside>
 				<aside class="blue_box">
 					<h2 class="sub_head"><span class="ally">A</span>11y</h2>
 					<p>Ensuring that web sites, apps, and software are accessible is a priority. As I learn more about these principles, I design with accessibility in mind, then engineer those designs to meet accessibility best practices.</p>
-					<a class="skill_cta" href="#">More accessibility</a>
+					<a class="skill_cta" href="skills/accessibility/">More accessibility</a>
 				</aside>
 			</section>
 
