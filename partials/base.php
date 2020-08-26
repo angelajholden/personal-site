@@ -5,4 +5,4 @@
 <!-- <base href="http://angelajholden/"> -->
 
 <!-- Heroku -->
-<base href="http://angelajholden.herokuapp.com/">
+<!-- <base href="http://angelajholden.herokuapp.com/"> -->

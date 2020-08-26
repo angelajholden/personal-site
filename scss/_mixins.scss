@@ -34,11 +34,19 @@ $northwell: 'Northwell', script;
 	border: 3px solid $yellow;
 	transition: all 0.3s ease;
 
-	&:hover,
-	&:active {
-		background-color: $white;
-		color: $primary;
-	}
+		&:hover,
+		&:active {
+				background-color: $white;
+				color: $primary;
+		}
+
+		@media (max-width: 500px) {
+			padding: 10px 25px;
+
+			span {
+				display: block;
+			}
+		}
 }
 
 @mixin blue-button {
@@ -54,11 +62,19 @@ $northwell: 'Northwell', script;
 	border: 3px solid $primary;
 	transition: all 0.3s ease;
 
-	&:hover,
-	&:active {
-		background-color: $white;
-		color: $primary;
-	}
+		&:hover,
+		&:active {
+				background-color: $white;
+				color: $primary;
+		}
+
+		@media (max-width: 500px) {
+			padding: 10px 35px;
+
+			span {
+				display: block;
+			}
+		}
 }
 
 // sass --watch scss/style.scss:style.css --style compressed

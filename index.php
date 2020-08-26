@@ -52,7 +52,7 @@
 
 				<p>Making the world a better place, one user experience at a time.</p>
 
-				<a class="button" href="mailto:info@angelajholden.com">Interested? Let's talk.</a>
+				<a class="button" href="mailto:info@angelajholden.com">Interested? <span>Let's talk.</span></a>
 
 				<?php include_once('svg/circle.svg'); ?>
 			</header>
