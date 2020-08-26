@@ -1,5 +1,5 @@
 <!-- MAMP FREE -->
-<!-- <base href="http://localhost/personal-site/"> -->
+<!-- <base href="http://localhost:8888/personal-site/"> -->
 
 <!-- MAMP PRO -->
 <!-- <base href="http://angelajholden/"> -->
