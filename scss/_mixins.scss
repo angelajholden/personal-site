@@ -39,6 +39,14 @@ $northwell: 'Northwell', script;
 				background-color: $white;
 				color: $primary;
 		}
+
+		@media (max-width: 500px) {
+			padding: 10px 25px;
+
+			span {
+				display: block;
+			}
+		}
 }
 
 @mixin blue-button {
@@ -58,6 +66,14 @@ $northwell: 'Northwell', script;
 		&:active {
 				background-color: $white;
 				color: $primary;
+		}
+
+		@media (max-width: 500px) {
+			padding: 10px 35px;
+
+			span {
+				display: block;
+			}
 		}
 }
 
