@@ -4,13 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Angela J. Holden | Designer &amp; Developer</title>
-        <meta name="description" content="Frontend developer, user interface (UI) and user experience (UX) designer.">
+        <title>Angela J. Holden | Frontend Developer</title>
+        <meta name="description" content="Frontend developer">
         <link rel='dns-prefetch' href='//fonts.googleapis.com'>
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="favicon.png">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
         <?php include_once('partials/base.php'); ?>
     </head>
@@ -39,8 +38,8 @@
 			<section class="content">
 				<article class="yellow_box">
 					<h2 class="sub_head">Hello there</h2>
-					<p>My name is Angela and I’m a UI/UX designer and frontend developer. I love my dog, the piano and coding. In that order. Rounding out my list are cheap wine, coffee and books.</p>
-					<a class="button" href="#">More About Me</a>
+					<p>First impressions matter. Engaging, beautiful design gets eyes on your app, but aesthetics are only part of the puzzle. Creating a seamless, responsive interface that sets it apart begins with solid code, strategic integration of new technologies, and measurable performance goals. Experiential, human-driven design, inside and out.</p>
+					<a class="button" href="#">About Me</a>
 				</article>
 
 				<figure class="img_right">
@@ -51,17 +50,17 @@
 			<section class="content">
 				<aside class="blue_box">
 					<h2 class="sub_head">Engineer</h2>
-					<p>Writing frontend code is what I love most. I discovered web design when I began learning HTML and CSS. I’ve spent thousands of hours building layouts and improving designs for responsiveness and accessibility.</p>
+					<p>Anticipating the needs and actions of users allows you to create a system that feels intuitive and easy.</p>
 					<a class="skill_cta" href="#">More frontend</a>
 				</aside>
 				<aside class="blue_box">
 					<h2 class="sub_head">Design</h2>
-					<p>Learning to design has not been easy for me. It’s disheartening to love beautiful things, and then struggle to create them. I’ve worked harder to be a good designer than anything else I’ve done.</p>
+					<p>Development and design should work together to support the visitor as they use your interface.</p>
 					<a class="skill_cta" href="#">More UI/UX</a>
 				</aside>
 				<aside class="blue_box">
 					<h2 class="sub_head"><span class="ally">A</span>11y</h2>
-					<p>Ensuring that web sites, apps, and software are accessible is a priority. As I learn more about these principles, I design with accessibility in mind, then engineer those designs to meet accessibility best practices.</p>
+					<p>Designing for humans means designing for all humans. Inclusivity is a catalyst for innovation, not a barrier.</p>
 					<a class="skill_cta" href="#">More accessibility</a>
 				</aside>
 			</section>

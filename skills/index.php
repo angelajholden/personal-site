@@ -15,7 +15,7 @@
         <?php include_once('../partials/base.php'); ?>
     </head>
 
-	<body class="home">
+	<body class="skills">
 
 		<?php include_once('../partials/nav.php'); ?>
 
@@ -36,21 +36,12 @@
 				<?php include_once('../svg/circle.svg'); ?>
 			</header>
 
-			<section class="content">
-				<article class="yellow_box">
-					<h2 class="sub_head">Well, hello there!</h2>
-					<p>My name is Angela and I’m a UI/UX designer and frontend developer. I love my dog, the piano and coding. In that order. Rounding out my list are cheap wine, coffee and books.</p>
-					<button><a class="button" href="#">More About Me</a></button>
-				</article>
-
-				<figure class="img_box">
-					<img src="images/angelajholden-piano-softlight.jpg" alt="">
-				</figure>
+			<section id="skills__items" class="content">
+				<!-- rest api skills go here -->
 			</section>
-
-		</main>
 
 		<?php include_once('../partials/footer.php'); ?>
 
+		</main>
 	</body>
 </html>

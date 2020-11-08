@@ -102,16 +102,16 @@ a[href="#skip-nav"] {
 		}
 	}
 
-	.sub-menu {
+	.sub_menu {
 		text-align: left;
 	}
 
-	.sub-menu li {
+	.sub_menu li {
 		display: block;
 		margin: 0;
 	}
 
-	.sub-menu a {
+	.sub_menu a {
 		display: block;
 		color: $white;
 		white-space: nowrap;
@@ -184,6 +184,11 @@ a.menu-close {
 		height: 100vh;
 		overflow-y: auto;
 		padding: 0;
+		transition: left 0.5s ease;
+
+		&.active {
+			left: 0;
+		}
 
 		& > ul {
 			margin-top: 50px;
@@ -224,7 +229,7 @@ a.menu-close {
 		}
 
 		li a,
-		.sub-menu a {
+		.sub_menu a {
 			display: block;
 			width: 100%;
 			background-color: transparent;
