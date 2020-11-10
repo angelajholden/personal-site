@@ -12,19 +12,14 @@ window.onload = function() {
 	};
 
 	// you are here navigation
-	// get the unordered list container
 	var navList = document.getElementById('nav__items');
-	// get each list item with a class of nav_item
 	var items = navList.getElementsByClassName('nav_item');
-	// loop through each list item
 	for (var i = 0; i < items.length; i++) {
 		var navItem = items[i];
 		var navLink = navItem.getElementsByTagName('a');
-		// then loop through each 'a' tag in the list item
 		for (var x = 0; x < navLink.length; x++) {
 			var linkPath = navLink[x].href;
 			var docPath = document.location.href;
-			// if the 'a' tag link matches the current page link, add 'current' class
 			if (linkPath === docPath) {
 				navItem.classList.add('current');
 			}

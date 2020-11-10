@@ -1,1 +1,12 @@
-<svg class="svg_circle" aria-label="hidden" viewBox="0 0 529 401" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <defs> <circle id="path-1" cx="264.5" cy="264.5" r="264.5"></circle> <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="529" height="529" fill="white"> <use xlink:href="#path-1"></use> </mask> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Homepage" transform="translate(-267.000000, -95.000000)"> <g id="Group" transform="translate(267.000000, 31.000000)"> <use id="Oval" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="4" opacity="0.401297433" stroke-dasharray="2,5" xlink:href="#path-1"></use> <rect id="Diamond-right" fill="#FFFFFF" transform="translate(510.000000, 361.000000) rotate(-24.000000) translate(-510.000000, -361.000000) " x="505" y="356" width="10" height="10"></rect> <rect id="Diamond-left" fill="#FFFFFF" transform="translate(30.000000, 144.000000) rotate(-19.000000) translate(-30.000000, -144.000000) " x="25" y="139" width="10" height="10"></rect> </g> </g> </g> </svg>
+<svg class="svg_circle" width="533px" height="539px" viewBox="0 0 533 539" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(2.000000, 2.000000)">
+            <g opacity="0.401297433" stroke-dasharray="2,5" stroke="#FFFFFF" stroke-width="2">
+                <path d="M264.5,529 C410.579316,529 529,410.579316 529,264.5 C529,118.420684 410.579316,0 264.5,0 C118.420684,0 0,118.420684 0,264.5 C0,410.579316 118.420684,529 264.5,529 Z" id="path-1"></path>
+            </g>
+            <rect fill="#FFFFFF" fill-rule="nonzero" transform="translate(501.686330, 146.289071) rotate(-71.000000) translate(-501.686330, -146.289071) " x="496.68633" y="141.289071" width="10" height="10"></rect>
+            <rect fill="#FFFFFF" fill-rule="nonzero" transform="translate(259.686330, 529.289071) rotate(-135.000000) translate(-259.686330, -529.289071) " x="254.68633" y="524.289071" width="10" height="10"></rect>
+            <rect fill="#FFFFFF" fill-rule="nonzero" transform="translate(30.000000, 144.000000) rotate(-19.000000) translate(-30.000000, -144.000000) " x="25" y="139" width="10" height="10"></rect>
+        </g>
+    </g>
+</svg>
