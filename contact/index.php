@@ -37,6 +37,7 @@
     <section class="content">
 
       <form action="" class="form">
+        <h2 class="block_header">Contact Me</h2>
         <div class="form_wrap">
           <div class="input">
             <label class="screen-reader-text" for="full_name">Full Name</label>
