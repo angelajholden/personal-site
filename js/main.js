@@ -1,39 +1,35 @@
-window.onload = function () {
-  function mainNav() {
-    // mobile menu functionality
-    let open = document.getElementById("open");
-    let close = document.getElementById("close");
-    let nav = document.getElementById("nav");
-    open.onclick = function addActive() {
-      nav.classList.add("active");
-    };
-    close.onclick = function removeActive() {
-      nav.classList.remove("active");
-    };
-  }
-  mainNav();
+function mainNav() {
+  // mobile menu functionality
+  let open = document.getElementById("open");
+  let close = document.getElementById("close");
+  let nav = document.getElementById("nav");
+  open.onclick = function addActive() {
+    nav.classList.add("active");
+  };
+  close.onclick = function removeActive() {
+    nav.classList.remove("active");
+  };
+}
 
-  function currentItem() {
-    // you are here navigation
-    var navList = document.getElementById("nav__items");
-    var items = navList.getElementsByClassName("nav_item");
-    for (var i = 0; i < items.length; i++) {
-      var navItem = items[i];
-      var navLink = navItem.getElementsByTagName("a");
-      for (var x = 0; x < navLink.length; x++) {
-        var linkPath = navLink[x].href;
-        var docPath = document.location.href;
-        if (linkPath === docPath) {
-          navItem.classList.add("current");
-        }
+function currentItem() {
+  // you are here navigation
+  var navList = document.getElementById("nav__items");
+  var items = navList.getElementsByClassName("nav_item");
+  for (var i = 0; i < items.length; i++) {
+    var navItem = items[i];
+    var navLink = navItem.getElementsByTagName("a");
+    for (var x = 0; x < navLink.length; x++) {
+      var linkPath = navLink[x].href;
+      var docPath = document.location.href;
+      if (linkPath === docPath) {
+        navItem.classList.add("current");
       }
     }
   }
-  currentItem();
-};
+}
 
 function skillsApi() {
-  // get the content from wordpress rest api
+  // get skills content from wordpress rest api
   let request = new XMLHttpRequest();
   request.open("GET", "https://angelajholden.com/wp-json/wp/v2/ajhskill");
   request.onload = function () {
@@ -55,4 +51,9 @@ function skillsApi() {
   };
   request.send();
 }
-skillsApi();
+
+window.onload = function () {
+  mainNav();
+  currentItem();
+  skillsApi();
+};

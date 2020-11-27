@@ -1,47 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Angela J. Holden | Designer &amp; Developer</title>
-        <meta name="description" content="Frontend developer, user interface (UI) and user experience (UX) designer.">
-        <link rel='dns-prefetch' href='//fonts.googleapis.com'>
-        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600" rel="stylesheet">
-        <link rel="stylesheet" href="../style.css">
-        <link rel="shortcut icon" href="../favicon.png">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script type="text/javascript" src="../js/main.js"></script>
-        <?php include_once('../partials/base.php'); ?>
-    </head>
 
-	<body class="skills">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Angela J. Holden | Designer &amp; Developer</title>
+    <meta name="description" content="Frontend developer, user interface (UI) and user experience (UX) designer.">
+    <link rel='dns-prefetch' href='//fonts.googleapis.com'>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../favicon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <?php include_once('../partials/base.php'); ?>
+</head>
 
-		<?php include_once('../partials/nav.php'); ?>
+<body class="skills">
 
-		<main id="skip-nav" class="wrap">
+    <?php include_once('../partials/nav.php'); ?>
 
-			<header class="header">
-				<div class="top_home_links">
-					<span class="home_links">Angela J. Holden</span>
-					<span class="home_links"><a href="#">Résumé</a></span>
-				</div>
+    <main id="skip-nav" class="wrap">
 
-				<?php include_once('../svg/initials.svg'); ?>
+        <header class="header">
 
-				<p>Making the world a better place, one user experience at a time.</p>
+            <h1 class="block_header">My Skills</h1>
+            <?php include_once('../svg/initials.svg'); ?>
 
-				<button><a class="button" href="#">Interested? Let's talk.</a></button>
+        </header>
 
-				<?php include_once('../svg/circle.svg'); ?>
-			</header>
+        <section id="skills__items" class="content">
+            <!-- rest api skills go here -->
+        </section>
 
-			<section id="skills__items" class="content">
-				<!-- rest api skills go here -->
-			</section>
+        <?php include_once('../partials/footer.php'); ?>
 
-		<?php include_once('../partials/footer.php'); ?>
+    </main>
+</body>
 
-		</main>
-	</body>
 </html>
