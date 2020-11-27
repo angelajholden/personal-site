@@ -19,7 +19,7 @@ body {
   color: $secondary;
   line-height: 1.5;
   margin: 0;
-  padding: 100px 25px 25px;
+  padding: 125px 25px 25px;
 
   @media (max-width: 960px) {
     padding: 42px 10px 25px;
@@ -39,8 +39,10 @@ body {
 
 .screen-reader-text {
   position: absolute;
-  top: -9999px;
-  left: -9999px;
+  width: 1px;
+  height: 1px;
+  margin-left: -1px;
+  clip: rect(0 0 0 0);
 }
 
 a {
