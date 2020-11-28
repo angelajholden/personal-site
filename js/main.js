@@ -36,13 +36,32 @@ function copyrightYear() {
 
 let map;
 function initMap() {
-  //let apiKey = AIzaSyAPF1RV4l66ov2BkOl9OjhFmbdrnIETdhc;
   let saintPaul = { lat: 44.9537, lng: -93.09 };
-
   map = new google.maps.Map(document.getElementById("map"), {
     center: saintPaul,
     zoom: 13,
     gestureHandling: "cooperative",
+  });
+  let contentString =
+    '<div id="info_window">' +
+    "<figure>" +
+    '<img src="../images/angelajholden-heidi-looking-out-window.jpg" alt="Heidi looking out the window."/>' +
+    "</figure>" +
+    '<div class="info_text">' +
+    "<h2>Hello World</h2>" +
+    "<p>I live in St. Paul, Minnesota<br>with my dog Heidi.</p>" +
+    "</div>" +
+    "</div>";
+  let infowindow = new google.maps.InfoWindow({
+    content: contentString,
+  });
+  let marker = new google.maps.Marker({
+    position: saintPaul,
+    map,
+    title: "Hello World",
+  });
+  marker.addListener("click", () => {
+    infowindow.open(map, marker);
   });
 }
 
@@ -75,6 +94,5 @@ window.onload = () => {
   mainNav();
   currentItem();
   copyrightYear();
-  // googleMap();
   skillsApi();
 };

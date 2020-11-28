@@ -2,3 +2,35 @@
   height: 400px;
   margin-top: 20px;
 }
+
+#info_window {
+  font-family: poppins;
+  display: flex;
+  flex-flow: row nowrap;
+
+  figure {
+    width: 100px;
+    height: 100px;
+    margin-right: 1rem;
+    border-radius: 50%;
+    border: 2px solid $primary;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center left;
+    }
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  p {
+    margin: 0;
+    font-size: 1rem;
+  }
+}

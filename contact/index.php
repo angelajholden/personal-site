@@ -13,8 +13,7 @@
     <link rel="shortcut icon" href="../favicon.png" />
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPF1RV4l66ov2BkOl9OjhFmbdrnIETdhc&callback=initMap&libraries=&v=weekly"
-        defer>
-    </script>
+        defer></script>
     <script type="text/javascript" src="../js/main.js"></script>
     <?php include_once('../partials/base.php'); ?>
 </head>
