@@ -11,6 +11,10 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600" rel="stylesheet" />
     <link rel="stylesheet" href="../style.css" />
     <link rel="shortcut icon" href="../favicon.png" />
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPF1RV4l66ov2BkOl9OjhFmbdrnIETdhc&callback=initMap&libraries=&v=weekly"
+        defer>
+    </script>
     <script type="text/javascript" src="../js/main.js"></script>
     <?php include_once('../partials/base.php'); ?>
 </head>
@@ -59,9 +63,7 @@
 
         </section>
 
-        <!-- <section class="content">
-
-        </section> -->
+        <section id="map"></section>
 
         <?php include_once('../partials/footer.php'); ?>
     </main>

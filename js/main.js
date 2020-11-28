@@ -13,14 +13,14 @@ function mainNav() {
 
 function currentItem() {
   // you are here navigation
-  var navList = document.getElementById("nav__items");
-  var items = navList.getElementsByClassName("nav_item");
-  for (var i = 0; i < items.length; i++) {
-    var navItem = items[i];
-    var navLink = navItem.getElementsByTagName("a");
-    for (var x = 0; x < navLink.length; x++) {
-      var linkPath = navLink[x].href;
-      var docPath = document.location.href;
+  let navList = document.getElementById("nav__items");
+  let items = navList.getElementsByClassName("nav_item");
+  for (let i = 0; i < items.length; i++) {
+    let navItem = items[i];
+    let navLink = navItem.getElementsByTagName("a");
+    for (let x = 0; x < navLink.length; x++) {
+      let linkPath = navLink[x].href;
+      let docPath = document.location.href;
       if (linkPath === docPath) {
         navItem.classList.add("current");
       }
@@ -28,21 +28,40 @@ function currentItem() {
   }
 }
 
+function copyrightYear() {
+  let c = document.getElementById("date");
+  let d = new Date();
+  c.innerHTML = d.getFullYear();
+}
+
+let map;
+function initMap() {
+  //let apiKey = AIzaSyAPF1RV4l66ov2BkOl9OjhFmbdrnIETdhc;
+  let saintPaul = { lat: 44.9537, lng: -93.09 };
+
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: saintPaul,
+    zoom: 13,
+    gestureHandling: "cooperative",
+  });
+}
+
 function skillsApi() {
   // get skills content from wordpress rest api
   let request = new XMLHttpRequest();
   request.open("GET", "https://angelajholden.com/wp-json/wp/v2/ajhskill");
-  request.onload = function () {
+  request.onload = () => {
     let response = request.response;
     let parsedData = JSON.parse(response);
     //console.log(parsedData);
+
     let output = "";
-    // for (item in parsedData) {
-    let title = parsedData[0].title.rendered;
-    let excerpt = parsedData[0].excerpt.rendered;
-    output +=
-      '<aside class="skill">' + "<h2>" + title + "</h2>" + excerpt + "</aside>";
-    // }
+    for (i = 0; i < parsedData.length; i++) {
+      let title = parsedData[i].title.rendered;
+      let excerpt = parsedData[i].excerpt.rendered;
+      output += `<aside class="skill"><h2>${title}</h2>${excerpt}</aside>`;
+    }
+
     let update = document.getElementById("skills__items");
     if (update) {
       update.innerHTML = output;
@@ -52,8 +71,10 @@ function skillsApi() {
   request.send();
 }
 
-window.onload = function () {
+window.onload = () => {
   mainNav();
   currentItem();
+  copyrightYear();
+  // googleMap();
   skillsApi();
 };
