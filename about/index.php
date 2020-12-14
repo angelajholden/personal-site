@@ -1,55 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>About Angela J. Holden | Frontend Developer</title>
-        <meta name="description" content="Frontend developer">
-        <link rel='dns-prefetch' href='//fonts.googleapis.com'>
-        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600" rel="stylesheet">
-        <link rel="stylesheet" href="../style.css">
-        <link rel="shortcut icon" href="../favicon.png">
-        <script type="text/javascript" src="../js/main.js"></script>
-        <?php include_once('../partials/base.php'); ?>
-    </head>
 
-	<body class="about">
+<?php include_once('../partials/head.php'); ?>
 
-		<?php include_once('../partials/nav.php'); ?>
+<body class="about">
 
-		<main id="skip-nav" class="wrap">
+    <?php include_once('../partials/nav.php'); ?>
 
-			<header class="header">
-				<div class="top_home_links">
-					<span class="home_links">Angela J. Holden</span>
-					<span class="home_links"><a href="#">Résumé</a></span>
-				</div>
+    <main id="skip-nav" class="wrap">
 
-				<?php include_once('../svg/initials.svg'); ?>
+        <header class="header">
+            <div class="top_home_links">
+                <span class="home_links">Angela J. Holden</span>
+                <span class="home_links"><a href="#">Résumé</a></span>
+            </div>
 
-				<p>Making the world a better place, one user experience at a time.</p>
+            <?php include_once('../svg/initials.svg'); ?>
 
-				<button><a class="button" href="#">Interested? Let's talk.</a></button>
+            <p>Making the world a better place, one user experience at a time.</p>
 
-				<?php include_once('../svg/circle.svg'); ?>
-			</header>
+            <button><a class="button" href="#">Interested? Let's talk.</a></button>
 
-			<section class="content">
-				<article class="yellow_box">
-					<h2 class="sub_head">Well, hello there!</h2>
-					<p>My name is Angela and I’m a UI/UX designer and frontend developer. I love my dog, the piano and coding. In that order. Rounding out my list are cheap wine, coffee and books.</p>
-					<button><a class="button" href="#">More About Me</a></button>
-				</article>
+            <?php include_once('../svg/circle.svg'); ?>
+        </header>
 
-				<figure class="img_box">
-					<img src="images/angelajholden-piano-softlight.jpg" alt="">
-				</figure>
-			</section>
+        <section class="content">
+            <article class="yellow_box">
+                <h2 class="sub_head">Well, hello there!</h2>
+                <p>My name is Angela and I’m a UI/UX designer and frontend developer. I love my dog, the piano and
+                    coding. In that order. Rounding out my list are cheap wine, coffee and books.</p>
+                <button><a class="button" href="#">More About Me</a></button>
+            </article>
 
-		</main>
+            <figure class="img_box">
+                <img src="images/angelajholden-piano-softlight.jpg" alt="">
+            </figure>
+        </section>
 
-		<?php include_once('../partials/footer.php'); ?>
+    </main>
 
-	</body>
+    <?php include_once('../partials/footer.php'); ?>
+
+</body>
+
 </html>

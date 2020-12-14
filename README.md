@@ -1,3 +1,13 @@
-# Build a simple, responsive menu.
+# Portfolio :wine_glass:
 
-This is a simple, responsive menu built with HTML5 and CSS (and a teeny, tiny bit of jQuery).
+## Made with...
+
+-   HTML
+-   CSS
+-   JavaScript
+-   and a little PHP
+
+---
+
+Cheers!  
+Angela :two_hearts:

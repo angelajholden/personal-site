@@ -1,1 +1,11 @@
-*.sass-cache/
+node_modules
+tmp
+.tmp
+.npm-debug.log
+*.sass-cache
+*.css.map
+*.min.js.map
+*.vscode
+notes
+mockups
+images
