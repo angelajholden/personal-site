@@ -55,7 +55,7 @@ module.exports = function (grunt) {
                 livereload: true,
             },
             scripts: {
-                files: ["components/js/*.js", "components/scss/*.scss"],
+                files: ["components/scripts/*.js", "components/scss/*.scss"],
                 tasks: ["concat", "uglify", "sass", "autoprefixer"],
             },
         }, //watch
