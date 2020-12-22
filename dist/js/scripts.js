@@ -1,16 +1,3 @@
-// function mainNav() {
-//     // mobile menu functionality
-//     let open = document.getElementById("open");
-//     let close = document.getElementById("close");
-//     let nav = document.getElementById("nav");
-//     open.onclick = function addActive() {
-//         nav.classList.add("active");
-//     };
-//     close.onclick = function removeActive() {
-//         nav.classList.remove("active");
-//     };
-// }
-
 function openCloseMenu() {
     let icon = document.getElementById("menu_icon");
     let menu = document.getElementById("nav");
@@ -21,9 +8,11 @@ function openCloseMenu() {
         if (clicked === false) {
             icon.classList.add("clicked");
             menu.classList.add("active");
+            // menu.style.transition = "left 400ms ease";
         } else if (clicked === true) {
             icon.classList.remove("clicked");
             menu.classList.remove("active");
+            // menu.style.transition = "left 400ms ease";
         }
     });
 }
@@ -108,7 +97,6 @@ function skillsApi() {
 }
 
 window.onload = () => {
-    // mainNav();
     openCloseMenu();
     currentItem();
     copyrightYear();

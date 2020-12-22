@@ -54,6 +54,7 @@
     width: 100%;
     background-color: $white;
     z-index: 3;
+    // transition: none;
 
     ul {
         margin: 0;
@@ -230,16 +231,13 @@
     }
 
     .nav-primary {
-        position: fixed;
-        top: 0;
         left: -320px;
-        // background-color: $secondary;
         width: 320px;
         max-width: 100%;
         height: 100vh;
         overflow-y: auto;
         padding: 0;
-        transition: left 400ms ease;
+        // transition: left 400ms ease;
 
         &.active {
             left: 0;
@@ -290,12 +288,10 @@
             background-color: transparent;
             text-align: left;
             padding: 15px;
-            // color: $white;
 
             &:hover,
             &:active {
                 background-color: $primary;
-                // color: $white;
             }
         }
     }
