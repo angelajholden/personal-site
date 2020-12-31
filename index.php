@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>Angela J. Holden | Frontend Developer</title>
-    <meta name="description" content="JavaScript Lover U+2661 Frontend developer" />
+    <meta name="description" content="CSS &amp; JavaScript Lover" />
     <link rel="dns-prefetch" href="//fonts.googleapis.com" />
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600" rel="stylesheet" />
     <link rel="stylesheet" href="dist/css/styles.min.css" />
@@ -73,15 +73,11 @@
             </aside>
         </section>
 
-        <section class="content">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, sed magni ipsam dolorum beatae impedit
-                architecto voluptatem veniam. Voluptas velit hic quidem rem dignissimos enim aperiam eaque qui maxime
-                at?</p>
-        </section>
+        <?php include_once('partials/footer.php'); ?>
 
     </main>
 
-    <?php include_once('partials/footer.php'); ?>
+    <?php include_once('partials/social.php'); ?>
 
 </body>
 
