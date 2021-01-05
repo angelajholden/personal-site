@@ -1,9 +1,9 @@
 function baseUrl() {
 	const origin = document.location.origin;
 	const localhost = "http://localhost";
+	const head = document.head;
 
 	if (origin === localhost) {
-		const head = document.head;
 		head.insertAdjacentHTML("beforeend", `<base href="${localhost}/personal-site/">`);
 	} else {
 		head.insertAdjacentHTML("beforeend", `<base href="${origin}">`);
