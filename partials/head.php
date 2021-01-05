@@ -9,9 +9,4 @@
     <link rel="stylesheet" href="../dist/css/styles.min.css">
     <link rel="shortcut icon" href="../favicon.png">
     <script type="text/javascript" src="../dist/js/scripts.min.js"></script>
-    <?php include_once('../partials/base.php'); ?>
 </head>
-
-<!-- ♡
-WHITE HEART SUIT
-Unicode: U+2661, UTF-8: E2 99 A1 -->

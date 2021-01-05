@@ -10,6 +10,7 @@
     <ul id="nav__items">
         <li class="nav_item"><a href="./">Angela J. Holden</a></li>
         <li class="nav_item"><a href="./Angela_Holden_Resume.pdf" target="_blank">Resume</a></li>
+        <li class="nav_item"><a href="./about/">About</a></li>
         <li class="nav_item"><a href="./skills/">Skills</a></li>
         <li class="nav_item"><a href="./playground/">Playground</a></li>
         <li class="nav_item"><a href="./portfolio/">Portfolio</a></li>

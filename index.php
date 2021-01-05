@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="dist/css/styles.min.css" />
     <link rel="shortcut icon" href="favicon.png" />
     <script type="text/javascript" src="dist/js/scripts.min.js"></script>
-    <?php include_once('partials/base.php'); ?>
 </head>
 
 <body class="home">

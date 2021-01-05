@@ -1,3 +1,13 @@
+function baseUrl() {
+	const origin = document.location.origin;
+	const localhost = "http://localhost";
+
+	if (origin === localhost) {
+		const head = document.head;
+		head.insertAdjacentHTML("beforeend", `<base href="${localhost}/personal-site/">`);
+	}
+}
+
 function openCloseMenu() {
 	const icon = document.getElementById("menu_icon");
 	const menu = document.getElementById("nav");
@@ -94,6 +104,7 @@ function skillsApi() {
 }
 
 window.onload = () => {
+	baseUrl();
 	openCloseMenu();
 	currentItem();
 	copyrightYear();
