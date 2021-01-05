@@ -1,20 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Angela J. Holden | Designer &amp; Developer</title>
-    <meta name="description" content="Frontend developer, user interface (UI) and user experience (UX) designer.">
-    <link rel='dns-prefetch' href='//fonts.googleapis.com'>
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css">
-    <link rel="shortcut icon" href="../favicon.png">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="../js/main.js"></script>
-    <?php include_once('../partials/base.php'); ?>
-</head>
+<?php include_once('../partials/head.php'); ?>
 
 <body class="playground">
 
@@ -28,10 +15,16 @@
         </header>
 
         <section class="content">
-
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facere quae voluptate, corrupti
+                temporibus officiis quibusdam eligendi, vitae in autem, asperiores assumenda dolorem deserunt earum
+                impedit eaque blanditiis quis ad.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, sapiente distinctio nisi voluptas
+                perspiciatis error ullam nesciunt ea accusantium rerum laboriosam animi autem ab nostrum fugit eveniet
+                voluptatibus labore sunt?</p>
         </section>
 
         <?php include_once('../partials/footer.php'); ?>
+
     </main>
 
 </body>
