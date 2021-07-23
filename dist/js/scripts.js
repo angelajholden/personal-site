@@ -28,28 +28,43 @@ function openCloseMenu() {
 }
 
 function currentItem() {
-	const navList = document.getElementById("nav__items");
-	const items = navList.getElementsByClassName("nav_item");
-
-	for (let i = 0; i < items.length; i++) {
-		const navItem = items[i];
-		const navLink = navItem.getElementsByTagName("a");
-
-		for (let x = 0; x < navLink.length; x++) {
-			const linkPath = navLink[x].href;
-			const docPath = document.location.href;
-
-			if (linkPath === docPath) {
-				navItem.classList.add("current");
-			}
+	const listItems = document.querySelectorAll(".nav_item");
+	const path = document.location.href;
+	// console.log(path);
+	listItems.forEach((item) => {
+		const anchor = item.getElementsByTagName("a");
+		const link = anchor[0].href;
+		if (link === path) {
+			item.classList.add("current");
 		}
-	}
+	});
 }
+
+// function currentItem() {
+// 	const navList = document.getElementById("nav__items");
+// 	const items = navList.getElementsByClassName("nav_item");
+
+// 	for (let i = 0; i < items.length; i++) {
+// 		const navItem = items[i];
+// 		const navLink = navItem.getElementsByTagName("a");
+
+// 		for (let x = 0; x < navLink.length; x++) {
+// 			const linkPath = navLink[x].href;
+// 			const docPath = document.location.href;
+
+// 			if (linkPath === docPath) {
+// 				navItem.classList.add("current");
+// 			}
+// 		}
+// 	}
+// }
 
 function copyrightYear() {
 	const copyright = document.getElementById("date");
 	const year = new Date();
-	copyright.innerHTML = year.getFullYear();
+	if (copyright) {
+		copyright.innerHTML = year.getFullYear();
+	}
 }
 
 let map;
